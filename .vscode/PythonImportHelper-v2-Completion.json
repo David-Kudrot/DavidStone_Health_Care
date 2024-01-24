@@ -345,6 +345,142 @@
         "documentation": {}
     },
     {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "DefaultRouter",
+        "importPath": "rest_framework.routers",
+        "description": "rest_framework.routers",
+        "isExtraImport": true,
+        "detail": "rest_framework.routers",
+        "documentation": {}
+    },
+    {
+        "label": "DefaultRouter",
+        "importPath": "rest_framework.routers",
+        "description": "rest_framework.routers",
+        "isExtraImport": true,
+        "detail": "rest_framework.routers",
+        "documentation": {}
+    },
+    {
+        "label": "DefaultRouter",
+        "importPath": "rest_framework.routers",
+        "description": "rest_framework.routers",
+        "isExtraImport": true,
+        "detail": "rest_framework.routers",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -367,14 +503,6 @@
         "description": "pathlib",
         "isExtraImport": true,
         "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
         "documentation": {}
     },
     {
@@ -533,6 +661,42 @@
         "documentation": {}
     },
     {
+        "label": "ContactUsSerializer",
+        "kind": 6,
+        "importPath": "contact_us.serializers",
+        "description": "contact_us.serializers",
+        "peekOfCode": "class ContactUsSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ContactUs\n        fields = '__all__'",
+        "detail": "contact_us.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "contact_us.urls",
+        "description": "contact_us.urls",
+        "peekOfCode": "router = DefaultRouter() # making a router, router toiri korlaam\nrouter.register('', views.ContactUsViewsets) # router er antena toiri korlam \nurlpatterns = [\n    path('', include(router.urls)),\n]",
+        "detail": "contact_us.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "contact_us.urls",
+        "description": "contact_us.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', include(router.urls)),\n]",
+        "detail": "contact_us.urls",
+        "documentation": {}
+    },
+    {
+        "label": "ContactUsViewsets",
+        "kind": 6,
+        "importPath": "contact_us.views",
+        "description": "contact_us.views",
+        "peekOfCode": "class ContactUsViewsets(viewsets.ModelViewSet):\n    queryset = models.ContactUs.objects.all()\n    serializer_class = serializers.ContactUsSerializer",
+        "detail": "contact_us.views",
+        "documentation": {}
+    },
+    {
         "label": "application",
         "kind": 5,
         "importPath": "DavidStone_Health_Care.asgi",
@@ -573,7 +737,7 @@
         "kind": 5,
         "importPath": "DavidStone_Health_Care.settings",
         "description": "DavidStone_Health_Care.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'doctor',",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',",
         "detail": "DavidStone_Health_Care.settings",
         "documentation": {}
     },
@@ -582,7 +746,7 @@
         "kind": 5,
         "importPath": "DavidStone_Health_Care.settings",
         "description": "DavidStone_Health_Care.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'doctor',\n    'patient',\n    'appointment',",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'doctor',\n    'patient',",
         "detail": "DavidStone_Health_Care.settings",
         "documentation": {}
     },
@@ -708,7 +872,7 @@
         "kind": 5,
         "importPath": "DavidStone_Health_Care.urls",
         "description": "DavidStone_Health_Care.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n]\nurlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('contact_us/', include('contact_us.urls')),\n    path('services/', include('service.urls')),\n    path('patient/', include('patient.urls')),\n]\nurlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)",
         "detail": "DavidStone_Health_Care.urls",
         "documentation": {}
     },
@@ -848,6 +1012,42 @@
         "documentation": {}
     },
     {
+        "label": "PatientSerializer",
+        "kind": 6,
+        "importPath": "patient.serializers",
+        "description": "patient.serializers",
+        "peekOfCode": "class PatientSerializer(serializers.ModelSerializer):\n    user = serializers.StringRelatedField(many=False) # ekhane output a patient view a patient ta number dekhabe, name ta dekhate StringRelatedField use kora holo r many=False kora holo karon OneToOne field ache, ManytoMany field thakle many=True likha hoto\n    class Meta:\n        model = models.Patient\n        fields = '__all__'",
+        "detail": "patient.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "patient.urls",
+        "description": "patient.urls",
+        "peekOfCode": "router = DefaultRouter()\nrouter.register('list', views.PatientViewsets)\nurlpatterns = [\n    path('', include(router.urls)),\n]",
+        "detail": "patient.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "patient.urls",
+        "description": "patient.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', include(router.urls)),\n]",
+        "detail": "patient.urls",
+        "documentation": {}
+    },
+    {
+        "label": "PatientViewsets",
+        "kind": 6,
+        "importPath": "patient.views",
+        "description": "patient.views",
+        "peekOfCode": "class PatientViewsets(viewsets.ModelViewSet):\n    queryset = models.Patient.objects.all()\n    serializer_class = serializers.PatientSerializer",
+        "detail": "patient.views",
+        "documentation": {}
+    },
+    {
         "label": "Migration",
         "kind": 6,
         "importPath": "service.migrations.0001_initial",
@@ -872,6 +1072,42 @@
         "description": "service.models",
         "peekOfCode": "class ServiceModel(models.Model):\n    name = models.CharField(max_length=100)\n    description = models.TextField()\n    image = models.ImageField(upload_to=\"service/images\")",
         "detail": "service.models",
+        "documentation": {}
+    },
+    {
+        "label": "ServiceSerializer",
+        "kind": 6,
+        "importPath": "service.serializers",
+        "description": "service.serializers",
+        "peekOfCode": "class ServiceSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = models.ServiceModel\n        fields = '__all__'",
+        "detail": "service.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "service.urls",
+        "description": "service.urls",
+        "peekOfCode": "router = DefaultRouter()\nrouter.register('', views.ServiceViewsets)\nurlpatterns = [\n    path('', include(router.urls)),\n]",
+        "detail": "service.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "service.urls",
+        "description": "service.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', include(router.urls)),\n]",
+        "detail": "service.urls",
+        "documentation": {}
+    },
+    {
+        "label": "ServiceViewsets",
+        "kind": 6,
+        "importPath": "service.views",
+        "description": "service.views",
+        "peekOfCode": "class ServiceViewsets(viewsets.ModelViewSet):\n    queryset = models.ServiceModel.objects.all()\n    serializer_class = serializers.ServiceSerializer",
+        "detail": "service.views",
         "documentation": {}
     },
     {
