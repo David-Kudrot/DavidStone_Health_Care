@@ -64,6 +64,54 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -265,83 +313,11 @@
         "documentation": {}
     },
     {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
+        "label": "Review",
+        "importPath": "doctor.models",
+        "description": "doctor.models",
         "isExtraImport": true,
-        "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
+        "detail": "doctor.models",
         "documentation": {}
     },
     {
@@ -390,6 +366,110 @@
         "description": "rest_framework",
         "isExtraImport": true,
         "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
         "documentation": {}
     },
     {
@@ -478,6 +558,62 @@
         "description": "rest_framework.routers",
         "isExtraImport": true,
         "detail": "rest_framework.routers",
+        "documentation": {}
+    },
+    {
+        "label": "DefaultRouter",
+        "importPath": "rest_framework.routers",
+        "description": "rest_framework.routers",
+        "isExtraImport": true,
+        "detail": "rest_framework.routers",
+        "documentation": {}
+    },
+    {
+        "label": "DefaultRouter",
+        "importPath": "rest_framework.routers",
+        "description": "rest_framework.routers",
+        "isExtraImport": true,
+        "detail": "rest_framework.routers",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
         "documentation": {}
     },
     {
@@ -562,6 +698,14 @@
         "documentation": {}
     },
     {
+        "label": "SpecializationViewset",
+        "importPath": "doctor.views",
+        "description": "doctor.views",
+        "isExtraImport": true,
+        "detail": "doctor.views",
+        "documentation": {}
+    },
+    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -622,6 +766,42 @@
         "description": "appointment.models",
         "peekOfCode": "APPOINTMENT_TYPES = [\n    ('Offline', 'Offline'),\n    ('Online', 'Online'),\n]\nclass Appointment(models.Model):\n    patient = models.ForeignKey(Patient, on_delete = models.CASCADE)\n    doctor = models.ForeignKey(Doctor, on_delete = models.CASCADE)\n    appointment_types = models.CharField(choices = APPOINTMENT_TYPES, max_length = 10)\n    appointment_status = models.CharField(choices = APPOINTMENT_STATUS, max_length = 10, default = \"Pending\")\n    symptom = models.TextField()",
         "detail": "appointment.models",
+        "documentation": {}
+    },
+    {
+        "label": "AppointmentSerializer",
+        "kind": 6,
+        "importPath": "appointment.serializers",
+        "description": "appointment.serializers",
+        "peekOfCode": "class AppointmentSerializer(serializers.ModelSerializer):\n    patient = serializers.StringRelatedField(many=False)\n    doctor = serializers.StringRelatedField(many=False)\n    time = serializers.StringRelatedField(many=False)\n    class Meta:\n        model = models.Appointment\n        fields = '__all__'",
+        "detail": "appointment.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "appointment.urls",
+        "description": "appointment.urls",
+        "peekOfCode": "router = DefaultRouter()\nrouter.register('', views.AppointmentViewset)\nurlpatterns = [\n    path('', include(router.urls)),\n]",
+        "detail": "appointment.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "appointment.urls",
+        "description": "appointment.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', include(router.urls)),\n]",
+        "detail": "appointment.urls",
+        "documentation": {}
+    },
+    {
+        "label": "AppointmentViewset",
+        "kind": 6,
+        "importPath": "appointment.views",
+        "description": "appointment.views",
+        "peekOfCode": "class AppointmentViewset(viewsets.ModelViewSet):\n    queryset = models.Appointment.objects.all() # Appointment model er sob data asbe\n    serializer_class = serializers.AppointmentSerializer\n    def get_queryset(self):\n        queryset = super().get_queryset() # uporer queryset theke all data queryset variable a rakhlam karon eta k patient_id die filter kore override korbo\n        patient_id = self.request.query_params.get('patient_id') # url er parameter patient_id k get korlam \n        # jodi patient_id thake tobe filter korlam oi patient_id die r queryset k return korlam \n        if patient_id: \n            queryset = queryset.filter(patient_id=patient_id)\n        return queryset",
+        "detail": "appointment.views",
         "documentation": {}
     },
     {
@@ -872,7 +1052,7 @@
         "kind": 5,
         "importPath": "DavidStone_Health_Care.urls",
         "description": "DavidStone_Health_Care.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('contact_us/', include('contact_us.urls')),\n    path('services/', include('service.urls')),\n    path('patient/', include('patient.urls')),\n]\nurlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('contact_us/', include('contact_us.urls')),\n    path('services/', include('service.urls')),\n    path('patient/', include('patient.urls')),\n    path('doctor/', include('doctor.urls')),\n    path('appointment/', include('appointment.urls')),\n]\nurlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)",
         "detail": "DavidStone_Health_Care.urls",
         "documentation": {}
     },
@@ -895,11 +1075,38 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "doctor.migrations.0002_rename_user_doctor_name",
+        "description": "doctor.migrations.0002_rename_user_doctor_name",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('doctor', '0001_initial'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='doctor',\n            old_name='user',\n            new_name='name',\n        ),",
+        "detail": "doctor.migrations.0002_rename_user_doctor_name",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "doctor.migrations.0003_rename_name_doctor_user",
+        "description": "doctor.migrations.0003_rename_name_doctor_user",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('doctor', '0002_rename_user_doctor_name'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='doctor',\n            old_name='name',\n            new_name='user',\n        ),",
+        "detail": "doctor.migrations.0003_rename_name_doctor_user",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "doctor.migrations.0004_alter_doctor_image",
+        "description": "doctor.migrations.0004_alter_doctor_image",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('doctor', '0003_rename_name_doctor_user'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='doctor',\n            name='image',\n            field=models.ImageField(upload_to='doctor/images/'),\n        ),",
+        "detail": "doctor.migrations.0004_alter_doctor_image",
+        "documentation": {}
+    },
+    {
         "label": "SpecializationAdmin",
         "kind": 6,
         "importPath": "doctor.admin",
         "description": "doctor.admin",
-        "peekOfCode": "class SpecializationAdmin(admin.ModelAdmin):\n    prepopulated_fields = {'slug': ('name',), }\nclass DesignationAdmin(admin.ModelAdmin):\n    prepopulated_fields = {'slug': ('name',), }\nadmin.site.register(models.Specialization, SpecializationAdmin)\nadmin.site.register(models.Designation, DesignationAdmin)\nadmin.site.register(models.Doctor)\nadmin.site.register(models.Review)",
+        "peekOfCode": "class SpecializationAdmin(admin.ModelAdmin):\n    prepopulated_fields = {'slug': ('name',), }\nclass DesignationAdmin(admin.ModelAdmin):\n    prepopulated_fields = {'slug': ('name',), }\nadmin.site.register(models.Specialization, SpecializationAdmin)\nadmin.site.register(models.Designation, DesignationAdmin)\nadmin.site.register(models.Doctor)\nclass ReviewAdmin(admin.ModelAdmin):\n    list_display = ['reviewer_name', 'body', 'created', 'rating']\n    def reviewer_name(self, obj):",
         "detail": "doctor.admin",
         "documentation": {}
     },
@@ -908,7 +1115,16 @@
         "kind": 6,
         "importPath": "doctor.admin",
         "description": "doctor.admin",
-        "peekOfCode": "class DesignationAdmin(admin.ModelAdmin):\n    prepopulated_fields = {'slug': ('name',), }\nadmin.site.register(models.Specialization, SpecializationAdmin)\nadmin.site.register(models.Designation, DesignationAdmin)\nadmin.site.register(models.Doctor)\nadmin.site.register(models.Review)",
+        "peekOfCode": "class DesignationAdmin(admin.ModelAdmin):\n    prepopulated_fields = {'slug': ('name',), }\nadmin.site.register(models.Specialization, SpecializationAdmin)\nadmin.site.register(models.Designation, DesignationAdmin)\nadmin.site.register(models.Doctor)\nclass ReviewAdmin(admin.ModelAdmin):\n    list_display = ['reviewer_name', 'body', 'created', 'rating']\n    def reviewer_name(self, obj):\n        return f\"{obj.reviewer.user.first_name} {obj.reviewer.user.last_name}\"\nadmin.site.register(models.Review, ReviewAdmin)",
+        "detail": "doctor.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ReviewAdmin",
+        "kind": 6,
+        "importPath": "doctor.admin",
+        "description": "doctor.admin",
+        "peekOfCode": "class ReviewAdmin(admin.ModelAdmin):\n    list_display = ['reviewer_name', 'body', 'created', 'rating']\n    def reviewer_name(self, obj):\n        return f\"{obj.reviewer.user.first_name} {obj.reviewer.user.last_name}\"\nadmin.site.register(models.Review, ReviewAdmin)",
         "detail": "doctor.admin",
         "documentation": {}
     },
@@ -944,7 +1160,7 @@
         "kind": 6,
         "importPath": "doctor.models",
         "description": "doctor.models",
-        "peekOfCode": "class AvailableTime(models.Model):\n    name = models.CharField(max_length=100)\n    def __str__(self):\n        return self.name\nclass Doctor(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    image = models.ImageField(upload_to='doctor/images')\n    designation = models.ManyToManyField(Designation)\n    specialization = models.ManyToManyField(Specialization)\n    available_time = models.ManyToManyField(AvailableTime)",
+        "peekOfCode": "class AvailableTime(models.Model):\n    name = models.CharField(max_length=100)\n    def __str__(self):\n        return self.name\nclass Doctor(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    image = models.ImageField(upload_to='doctor/images/')\n    designation = models.ManyToManyField(Designation)\n    specialization = models.ManyToManyField(Specialization)\n    available_time = models.ManyToManyField(AvailableTime)",
         "detail": "doctor.models",
         "documentation": {}
     },
@@ -953,7 +1169,7 @@
         "kind": 6,
         "importPath": "doctor.models",
         "description": "doctor.models",
-        "peekOfCode": "class Doctor(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    image = models.ImageField(upload_to='doctor/images')\n    designation = models.ManyToManyField(Designation)\n    specialization = models.ManyToManyField(Specialization)\n    available_time = models.ManyToManyField(AvailableTime)\n    fee = models.IntegerField()\n    meeting_link = models.CharField(max_length=150)\n    def __str__(self):\n        return f\"{self.user.first_name} {self.user.last_name}\"",
+        "peekOfCode": "class Doctor(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    image = models.ImageField(upload_to='doctor/images/')\n    designation = models.ManyToManyField(Designation)\n    specialization = models.ManyToManyField(Specialization)\n    available_time = models.ManyToManyField(AvailableTime)\n    fee = models.IntegerField()\n    meeting_link = models.CharField(max_length=150)\n    def __str__(self):\n        return f\"{self.user.first_name} {self.user.last_name}\"",
         "detail": "doctor.models",
         "documentation": {}
     },
@@ -962,7 +1178,7 @@
         "kind": 6,
         "importPath": "doctor.models",
         "description": "doctor.models",
-        "peekOfCode": "class Review(models.Model):\n    reviewer = models.ForeignKey(Patient, on_delete = models.CASCADE)\n    doctor = models.ForeignKey(Doctor, on_delete = models.CASCADE)\n    body = models.TextField()\n    created = models.DateTimeField(auto_now_add = True)\n    rating = models.CharField(choices = STAR_CHOICES, max_length = 10)\n    def __str__(self):\n        return f\"{self.reviewer.user.first_name} {self.reviewer.user.last_name}\"",
+        "peekOfCode": "class Review(models.Model):\n    reviewer = models.ForeignKey(Patient, on_delete = models.CASCADE)\n    doctor = models.ForeignKey(Doctor, on_delete = models.CASCADE)\n    body = models.TextField()\n    created = models.DateTimeField(auto_now_add = True)\n    rating = models.CharField(choices = STAR_CHOICES, max_length = 10)\n    def __str__(self):\n        return f\"{self.reviewer.user.first_name}; {self.doctor.user.first_name}\"",
         "detail": "doctor.models",
         "documentation": {}
     },
@@ -976,12 +1192,129 @@
         "documentation": {}
     },
     {
+        "label": "DoctorSerializer",
+        "kind": 6,
+        "importPath": "doctor.serializers",
+        "description": "doctor.serializers",
+        "peekOfCode": "class DoctorSerializer(serializers.ModelSerializer):\n    user = serializers.StringRelatedField(many=False) # OneToOne relation tai many=False\n    designation = serializers.StringRelatedField(many=True) # ManyToMany relation tai many=True\n    specialization = serializers.StringRelatedField(many=True) # ManyToMany relation tai many=True\n    available_time = serializers.StringRelatedField(many=False) # OneToOne relation tai many=False\n    class Meta:\n        model = models.Doctor\n        fields = '__all__'\nclass SpecializationSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "doctor.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "SpecializationSerializer",
+        "kind": 6,
+        "importPath": "doctor.serializers",
+        "description": "doctor.serializers",
+        "peekOfCode": "class SpecializationSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = models.Specialization\n        fields = '__all__'\nclass DesignationSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = models.Designation\n        fields = '__all__'\nclass AvailableTimeSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "doctor.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "DesignationSerializer",
+        "kind": 6,
+        "importPath": "doctor.serializers",
+        "description": "doctor.serializers",
+        "peekOfCode": "class DesignationSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = models.Designation\n        fields = '__all__'\nclass AvailableTimeSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = models.AvailableTime\n        fields = '__all__'\nclass ReviewSerializer(serializers.ModelSerializer):\n    reviewer = serializers.StringRelatedField(many=False)",
+        "detail": "doctor.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "AvailableTimeSerializer",
+        "kind": 6,
+        "importPath": "doctor.serializers",
+        "description": "doctor.serializers",
+        "peekOfCode": "class AvailableTimeSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = models.AvailableTime\n        fields = '__all__'\nclass ReviewSerializer(serializers.ModelSerializer):\n    reviewer = serializers.StringRelatedField(many=False)\n    doctor = serializers.StringRelatedField(many=False)\n    class Meta:\n        model = models.Review\n        fields = '__all__'",
+        "detail": "doctor.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ReviewSerializer",
+        "kind": 6,
+        "importPath": "doctor.serializers",
+        "description": "doctor.serializers",
+        "peekOfCode": "class ReviewSerializer(serializers.ModelSerializer):\n    reviewer = serializers.StringRelatedField(many=False)\n    doctor = serializers.StringRelatedField(many=False)\n    class Meta:\n        model = models.Review\n        fields = '__all__'",
+        "detail": "doctor.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "doctor.urls",
+        "description": "doctor.urls",
+        "peekOfCode": "router = DefaultRouter()\nrouter.register('list', views.DoctorViewsets)\nrouter.register('specialization', views.SpecializationViewset)\nrouter.register('designation', views.DesignationViewset)\nrouter.register('available_time', views.AvailableTimeViewset)\nrouter.register('reviews', views.ReviewViewset)\nurlpatterns = [\n    path('', include(router.urls)),\n]",
+        "detail": "doctor.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "doctor.urls",
+        "description": "doctor.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', include(router.urls)),\n]",
+        "detail": "doctor.urls",
+        "documentation": {}
+    },
+    {
+        "label": "DoctorViewsets",
+        "kind": 6,
+        "importPath": "doctor.views",
+        "description": "doctor.views",
+        "peekOfCode": "class DoctorViewsets(viewsets.ModelViewSet):\n    queryset = models.Doctor.objects.all()\n    serializer_class = serializers.DoctorSerializer\nclass SpecializationViewset(viewsets.ModelViewSet):\n    queryset = models.Specialization.objects.all()\n    serializer_class = serializers.SpecializationSerializer\nclass DesignationViewset(viewsets.ModelViewSet):\n    queryset = models.Designation.objects.all()\n    serializer_class = serializers.DesignationSerializer\nclass AvailableTimeViewset(viewsets.ModelViewSet):",
+        "detail": "doctor.views",
+        "documentation": {}
+    },
+    {
+        "label": "SpecializationViewset",
+        "kind": 6,
+        "importPath": "doctor.views",
+        "description": "doctor.views",
+        "peekOfCode": "class SpecializationViewset(viewsets.ModelViewSet):\n    queryset = models.Specialization.objects.all()\n    serializer_class = serializers.SpecializationSerializer\nclass DesignationViewset(viewsets.ModelViewSet):\n    queryset = models.Designation.objects.all()\n    serializer_class = serializers.DesignationSerializer\nclass AvailableTimeViewset(viewsets.ModelViewSet):\n    queryset = models.AvailableTime.objects.all()\n    serializer_class = serializers.AvailableTimeSerializer\nclass ReviewViewset(viewsets.ModelViewSet):",
+        "detail": "doctor.views",
+        "documentation": {}
+    },
+    {
+        "label": "DesignationViewset",
+        "kind": 6,
+        "importPath": "doctor.views",
+        "description": "doctor.views",
+        "peekOfCode": "class DesignationViewset(viewsets.ModelViewSet):\n    queryset = models.Designation.objects.all()\n    serializer_class = serializers.DesignationSerializer\nclass AvailableTimeViewset(viewsets.ModelViewSet):\n    queryset = models.AvailableTime.objects.all()\n    serializer_class = serializers.AvailableTimeSerializer\nclass ReviewViewset(viewsets.ModelViewSet):\n    queryset = models.Review.objects.all()\n    serializer_class = serializers.ReviewSerializer",
+        "detail": "doctor.views",
+        "documentation": {}
+    },
+    {
+        "label": "AvailableTimeViewset",
+        "kind": 6,
+        "importPath": "doctor.views",
+        "description": "doctor.views",
+        "peekOfCode": "class AvailableTimeViewset(viewsets.ModelViewSet):\n    queryset = models.AvailableTime.objects.all()\n    serializer_class = serializers.AvailableTimeSerializer\nclass ReviewViewset(viewsets.ModelViewSet):\n    queryset = models.Review.objects.all()\n    serializer_class = serializers.ReviewSerializer",
+        "detail": "doctor.views",
+        "documentation": {}
+    },
+    {
+        "label": "ReviewViewset",
+        "kind": 6,
+        "importPath": "doctor.views",
+        "description": "doctor.views",
+        "peekOfCode": "class ReviewViewset(viewsets.ModelViewSet):\n    queryset = models.Review.objects.all()\n    serializer_class = serializers.ReviewSerializer",
+        "detail": "doctor.views",
+        "documentation": {}
+    },
+    {
         "label": "Migration",
         "kind": 6,
         "importPath": "patient.migrations.0001_initial",
         "description": "patient.migrations.0001_initial",
         "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Patient',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
         "detail": "patient.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "patient.migrations.0002_alter_patient_image",
+        "description": "patient.migrations.0002_alter_patient_image",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('patient', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='patient',\n            name='image',\n            field=models.ImageField(upload_to='patient/images/'),\n        ),",
+        "detail": "patient.migrations.0002_alter_patient_image",
         "documentation": {}
     },
     {
@@ -1007,7 +1340,7 @@
         "kind": 6,
         "importPath": "patient.models",
         "description": "patient.models",
-        "peekOfCode": "class Patient(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    image = models.ImageField(upload_to=\"patient/images\")\n    phone_no = models.CharField(max_length=15)\n    def __int__(self):\n        return f\"{self.user.first_name} {self.user.last_name}\"",
+        "peekOfCode": "class Patient(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    image = models.ImageField(upload_to=\"patient/images/\")\n    phone_no = models.CharField(max_length=15)\n    def __str__(self):\n        return f\"{self.user.first_name} {self.user.last_name}\"",
         "detail": "patient.models",
         "documentation": {}
     },
