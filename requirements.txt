@@ -39,3 +39,4 @@ sqlparse
 typing_extensions
 tzdata
 Werkzeug
+corsheaders

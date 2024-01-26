@@ -35,6 +35,18 @@ DEBUG = True
 ALLOWED_HOSTS = ["*"]
 CSRF_TRUSTED_ORIGINS = ['https://davidstone-health-care.onrender.com','https://*.127.0.0.1']
 
+# added
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_METHODS = [
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+]
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -44,14 +56,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
+    'django_filters',
     'rest_framework',
+    'rest_framework.authtoken',
     'doctor',
     'patient',
     'appointment',
     'service',
     'contact_us',
-    'rest_framework.authtoken',
-    'django_filters',
+    
+    
 ]
 
 MIDDLEWARE = [
@@ -62,6 +77,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware', #
 ]
 
 ROOT_URLCONF = 'DavidStone_Health_Care.urls'
