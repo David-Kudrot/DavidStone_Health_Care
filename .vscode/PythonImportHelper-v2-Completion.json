@@ -1070,7 +1070,7 @@
         "kind": 5,
         "importPath": "DavidStone_Health_Care.settings",
         "description": "DavidStone_Health_Care.settings",
-        "peekOfCode": "SECRET_KEY = env(\"SECRET_KEY\")\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = [\"*\"]\nCSRF_TRUSTED_ORIGINS = ['https://davidstone-health-care.onrender.com','https://*.127.0.0.1']\n# Application definition\nINSTALLED_APPS = [",
+        "peekOfCode": "SECRET_KEY = env(\"SECRET_KEY\")\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = [\"*\"]\nCSRF_TRUSTED_ORIGINS = ['https://davidstone-health-care.onrender.com','https://*.127.0.0.1']\n# added\nCORS_ALLOW_ALL_ORIGINS = True",
         "detail": "DavidStone_Health_Care.settings",
         "documentation": {}
     },
@@ -1079,7 +1079,7 @@
         "kind": 5,
         "importPath": "DavidStone_Health_Care.settings",
         "description": "DavidStone_Health_Care.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = [\"*\"]\nCSRF_TRUSTED_ORIGINS = ['https://davidstone-health-care.onrender.com','https://*.127.0.0.1']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = [\"*\"]\nCSRF_TRUSTED_ORIGINS = ['https://davidstone-health-care.onrender.com','https://*.127.0.0.1']\n# added\nCORS_ALLOW_ALL_ORIGINS = True\nCORS_ALLOW_METHODS = [\n    'DELETE',\n    'GET',\n    'OPTIONS',\n    'PATCH',",
         "detail": "DavidStone_Health_Care.settings",
         "documentation": {}
     },
@@ -1088,7 +1088,7 @@
         "kind": 5,
         "importPath": "DavidStone_Health_Care.settings",
         "description": "DavidStone_Health_Care.settings",
-        "peekOfCode": "ALLOWED_HOSTS = [\"*\"]\nCSRF_TRUSTED_ORIGINS = ['https://davidstone-health-care.onrender.com','https://*.127.0.0.1']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "peekOfCode": "ALLOWED_HOSTS = [\"*\"]\nCSRF_TRUSTED_ORIGINS = ['https://davidstone-health-care.onrender.com','https://*.127.0.0.1']\n# added\nCORS_ALLOW_ALL_ORIGINS = True\nCORS_ALLOW_METHODS = [\n    'DELETE',\n    'GET',\n    'OPTIONS',\n    'PATCH',\n    'POST',",
         "detail": "DavidStone_Health_Care.settings",
         "documentation": {}
     },
@@ -1097,7 +1097,25 @@
         "kind": 5,
         "importPath": "DavidStone_Health_Care.settings",
         "description": "DavidStone_Health_Care.settings",
-        "peekOfCode": "CSRF_TRUSTED_ORIGINS = ['https://davidstone-health-care.onrender.com','https://*.127.0.0.1']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',",
+        "peekOfCode": "CSRF_TRUSTED_ORIGINS = ['https://davidstone-health-care.onrender.com','https://*.127.0.0.1']\n# added\nCORS_ALLOW_ALL_ORIGINS = True\nCORS_ALLOW_METHODS = [\n    'DELETE',\n    'GET',\n    'OPTIONS',\n    'PATCH',\n    'POST',\n    'PUT',",
+        "detail": "DavidStone_Health_Care.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOW_ALL_ORIGINS",
+        "kind": 5,
+        "importPath": "DavidStone_Health_Care.settings",
+        "description": "DavidStone_Health_Care.settings",
+        "peekOfCode": "CORS_ALLOW_ALL_ORIGINS = True\nCORS_ALLOW_METHODS = [\n    'DELETE',\n    'GET',\n    'OPTIONS',\n    'PATCH',\n    'POST',\n    'PUT',\n]\n# Application definition",
+        "detail": "DavidStone_Health_Care.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOW_METHODS",
+        "kind": 5,
+        "importPath": "DavidStone_Health_Care.settings",
+        "description": "DavidStone_Health_Care.settings",
+        "peekOfCode": "CORS_ALLOW_METHODS = [\n    'DELETE',\n    'GET',\n    'OPTIONS',\n    'PATCH',\n    'POST',\n    'PUT',\n]\n# Application definition\nINSTALLED_APPS = [",
         "detail": "DavidStone_Health_Care.settings",
         "documentation": {}
     },
@@ -1106,7 +1124,7 @@
         "kind": 5,
         "importPath": "DavidStone_Health_Care.settings",
         "description": "DavidStone_Health_Care.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'doctor',\n    'patient',",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'corsheaders',\n    'django_filters',\n    'rest_framework',",
         "detail": "DavidStone_Health_Care.settings",
         "documentation": {}
     },
@@ -1115,7 +1133,7 @@
         "kind": 5,
         "importPath": "DavidStone_Health_Care.settings",
         "description": "DavidStone_Health_Care.settings",
-        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'DavidStone_Health_Care.urls'",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n    'corsheaders.middleware.CorsMiddleware', #\n]",
         "detail": "DavidStone_Health_Care.settings",
         "documentation": {}
     },
@@ -1196,7 +1214,7 @@
         "kind": 5,
         "importPath": "DavidStone_Health_Care.settings",
         "description": "DavidStone_Health_Care.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\nMEDIA_URL = 'media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nEMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\nMEDIA_URL = 'media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#",
         "detail": "DavidStone_Health_Care.settings",
         "documentation": {}
     },
@@ -1205,7 +1223,7 @@
         "kind": 5,
         "importPath": "DavidStone_Health_Care.settings",
         "description": "DavidStone_Health_Care.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\nMEDIA_URL = 'media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nEMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST='smtp.gmail.com'",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\nMEDIA_URL = 'media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#\nEMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'",
         "detail": "DavidStone_Health_Care.settings",
         "documentation": {}
     },
@@ -1214,7 +1232,7 @@
         "kind": 5,
         "importPath": "DavidStone_Health_Care.settings",
         "description": "DavidStone_Health_Care.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\nMEDIA_URL = 'media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nEMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST='smtp.gmail.com'\nEMAIL_USE_TLS=True\nEMAIL_PORT=587\nEMAIL_HOST_USER=env(\"EMAIL\")",
+        "peekOfCode": "STATIC_URL = 'static/'\nMEDIA_URL = 'media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#\nEMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST='smtp.gmail.com'\nEMAIL_USE_TLS=True\nEMAIL_PORT=587",
         "detail": "DavidStone_Health_Care.settings",
         "documentation": {}
     },
@@ -1223,7 +1241,7 @@
         "kind": 5,
         "importPath": "DavidStone_Health_Care.settings",
         "description": "DavidStone_Health_Care.settings",
-        "peekOfCode": "MEDIA_URL = 'media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nEMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST='smtp.gmail.com'\nEMAIL_USE_TLS=True\nEMAIL_PORT=587\nEMAIL_HOST_USER=env(\"EMAIL\")\nEMAIL_HOST_PASSWORD=env(\"EMAIL_PASSWORD\")",
+        "peekOfCode": "MEDIA_URL = 'media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#\nEMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST='smtp.gmail.com'\nEMAIL_USE_TLS=True\nEMAIL_PORT=587\nEMAIL_HOST_USER=env(\"EMAIL\")",
         "detail": "DavidStone_Health_Care.settings",
         "documentation": {}
     },
@@ -1232,7 +1250,7 @@
         "kind": 5,
         "importPath": "DavidStone_Health_Care.settings",
         "description": "DavidStone_Health_Care.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nEMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST='smtp.gmail.com'\nEMAIL_USE_TLS=True\nEMAIL_PORT=587\nEMAIL_HOST_USER=env(\"EMAIL\")\nEMAIL_HOST_PASSWORD=env(\"EMAIL_PASSWORD\")",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#\nEMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST='smtp.gmail.com'\nEMAIL_USE_TLS=True\nEMAIL_PORT=587\nEMAIL_HOST_USER=env(\"EMAIL\")\nEMAIL_HOST_PASSWORD=env(\"EMAIL_PASSWORD\")",
         "detail": "DavidStone_Health_Care.settings",
         "documentation": {}
     },
@@ -1664,7 +1682,7 @@
         "kind": 6,
         "importPath": "service.models",
         "description": "service.models",
-        "peekOfCode": "class ServiceModel(models.Model):\n    name = models.CharField(max_length=100)\n    description = models.TextField()\n    image = models.ImageField(upload_to=\"service/images\")",
+        "peekOfCode": "class ServiceModel(models.Model):\n    name = models.CharField(max_length=100)\n    description = models.TextField()\n    image = models.ImageField(upload_to=\"service/images\")\n    def __str__(self):\n        return self.name",
         "detail": "service.models",
         "documentation": {}
     },
