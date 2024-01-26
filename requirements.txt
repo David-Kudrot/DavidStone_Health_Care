@@ -39,4 +39,4 @@ sqlparse
 typing_extensions
 tzdata
 Werkzeug
-corsheaders
+django-cors-headers
