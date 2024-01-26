@@ -12,6 +12,7 @@ class AppointmentAdmin(admin.ModelAdmin):
     def doctor_name(self,obj):
         return obj.doctor.user.first_name
     
+    # save_model() method die admin, running kore dilei user email pabe
     def save_model(self, request, obj, form, change):
         obj.save()
         if obj.appointment_status == "Running" and obj.appointment_types == "Online":

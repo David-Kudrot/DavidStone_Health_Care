@@ -385,6 +385,14 @@
         "documentation": {}
     },
     {
+        "label": "pagination",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "serializers",
         "importPath": "rest_framework",
         "description": "rest_framework",
@@ -874,7 +882,7 @@
         "kind": 6,
         "importPath": "appointment.admin",
         "description": "appointment.admin",
-        "peekOfCode": "class AppointmentAdmin(admin.ModelAdmin):\n    list_display = ['doctor_name', 'patient_name', 'appointment_types', 'appointment_status', 'symptom', 'time', 'cancel']\n    def patient_name(self,obj):\n        return obj.patient.user.first_name\n    def doctor_name(self,obj):\n        return obj.doctor.user.first_name\n    def save_model(self, request, obj, form, change):\n        obj.save()\n        if obj.appointment_status == \"Running\" and obj.appointment_types == \"Online\":\n            email_subject = \"Your Online Appointment is Running\"",
+        "peekOfCode": "class AppointmentAdmin(admin.ModelAdmin):\n    list_display = ['doctor_name', 'patient_name', 'appointment_types', 'appointment_status', 'symptom', 'time', 'cancel']\n    def patient_name(self,obj):\n        return obj.patient.user.first_name\n    def doctor_name(self,obj):\n        return obj.doctor.user.first_name\n    # save_model() method die admin, running kore dilei user email pabe\n    def save_model(self, request, obj, form, change):\n        obj.save()\n        if obj.appointment_status == \"Running\" and obj.appointment_types == \"Online\":",
         "detail": "appointment.admin",
         "documentation": {}
     },
@@ -1117,7 +1125,7 @@
         "kind": 5,
         "importPath": "DavidStone_Health_Care.settings",
         "description": "DavidStone_Health_Care.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'DavidStone_Health_Care.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "peekOfCode": "WSGI_APPLICATION = 'DavidStone_Health_Care.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\nREST_FRAMEWORK = {",
         "detail": "DavidStone_Health_Care.settings",
         "documentation": {}
     },
@@ -1126,7 +1134,16 @@
         "kind": 5,
         "importPath": "DavidStone_Health_Care.settings",
         "description": "DavidStone_Health_Care.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\nREST_FRAMEWORK = {\n    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],\n    # jodi global authenticate korte chai tobe eta add korte hobe r na korle views.py te sob gulo dhore dhore authenticated korte hobe\n    # 'DEFAULT_PERMISSION_CLASSES': [",
+        "detail": "DavidStone_Health_Care.settings",
+        "documentation": {}
+    },
+    {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "DavidStone_Health_Care.settings",
+        "description": "DavidStone_Health_Care.settings",
+        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],\n    # jodi global authenticate korte chai tobe eta add korte hobe r na korle views.py te sob gulo dhore dhore authenticated korte hobe\n    # 'DEFAULT_PERMISSION_CLASSES': [\n    #     'rest_framework.permissions.IsAuthenticated',\n    # ]\n    # globally readonly permissions dite eta korte hobe\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.IsAuthenticatedOrReadOnly',\n    ],",
         "detail": "DavidStone_Health_Care.settings",
         "documentation": {}
     },
@@ -1410,11 +1427,20 @@
         "documentation": {}
     },
     {
+        "label": "DoctorPagination",
+        "kind": 6,
+        "importPath": "doctor.views",
+        "description": "doctor.views",
+        "peekOfCode": "class DoctorPagination(pagination.PageNumberPagination):\n    page_size = 1 # page size 1 dilam mane 1ta kore doctor dekhabe, joto dibo tot ta kore show korbe\n    page_size_query_param = page_size\n    max_page_size = 100\nclass DoctorViewsets(viewsets.ModelViewSet):\n    queryset = models.Doctor.objects.all()\n    pagination_class = DoctorPagination # pagination built-in variable/attribute er modhe uporer DoctorPagination class ta add kore dilam\n    serializer_class = serializers.DoctorSerializer\nclass SpecializationViewset(viewsets.ModelViewSet):\n    queryset = models.Specialization.objects.all()",
+        "detail": "doctor.views",
+        "documentation": {}
+    },
+    {
         "label": "DoctorViewsets",
         "kind": 6,
         "importPath": "doctor.views",
         "description": "doctor.views",
-        "peekOfCode": "class DoctorViewsets(viewsets.ModelViewSet):\n    queryset = models.Doctor.objects.all()\n    serializer_class = serializers.DoctorSerializer\nclass SpecializationViewset(viewsets.ModelViewSet):\n    queryset = models.Specialization.objects.all()\n    serializer_class = serializers.SpecializationSerializer\nclass DesignationViewset(viewsets.ModelViewSet):\n    queryset = models.Designation.objects.all()\n    serializer_class = serializers.DesignationSerializer\nclass AvailableTimeViewset(viewsets.ModelViewSet):",
+        "peekOfCode": "class DoctorViewsets(viewsets.ModelViewSet):\n    queryset = models.Doctor.objects.all()\n    pagination_class = DoctorPagination # pagination built-in variable/attribute er modhe uporer DoctorPagination class ta add kore dilam\n    serializer_class = serializers.DoctorSerializer\nclass SpecializationViewset(viewsets.ModelViewSet):\n    queryset = models.Specialization.objects.all()\n    serializer_class = serializers.SpecializationSerializer\nclass DesignationViewset(viewsets.ModelViewSet):\n    queryset = models.Designation.objects.all()\n    serializer_class = serializers.DesignationSerializer",
         "detail": "doctor.views",
         "documentation": {}
     },
@@ -1567,7 +1593,7 @@
         "kind": 6,
         "importPath": "patient.views",
         "description": "patient.views",
-        "peekOfCode": "class ActivateAccount(View):\n    def get(self, request, uid64, token):\n        try:\n            uid = urlsafe_base64_decode(uid64).decode()\n            user = User._default_manager.get(pk=uid)\n        except User.DoesNotExist:\n            user = None \n        if user is not None and default_token_generator.check_token(user, token):\n            user.is_active = True \n            user.save()",
+        "peekOfCode": "class ActivateAccount(View):\n    def get(self, request, uid64, token):\n        try:\n            uid = urlsafe_base64_decode(uid64).decode()\n            user = User._default_manager.get(pk=uid)\n        except User.DoesNotExist: # jodi user exists na kore obe user = None\n            user = None \n        if user is not None and default_token_generator.check_token(user, token):\n            user.is_active = True \n            user.save()",
         "detail": "patient.views",
         "documentation": {}
     },

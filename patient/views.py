@@ -76,7 +76,7 @@ class ActivateAccount(View):
         try:
             uid = urlsafe_base64_decode(uid64).decode()
             user = User._default_manager.get(pk=uid)
-        except User.DoesNotExist:
+        except User.DoesNotExist: # jodi user exists na kore obe user = None
             user = None 
 
         if user is not None and default_token_generator.check_token(user, token):

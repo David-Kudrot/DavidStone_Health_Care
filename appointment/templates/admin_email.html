@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Add your custom styles here */
+    </style>
+</head>
+
+<body>
+    <h2>Your Online Appointment is Running</h2>
+    
+    <p>Hello {{ user.first_name }} {{ user.last_name }},</p>
+    
+    <p>Your online appointment with Dr. {{ doctor.user.get_full_name }} is currently running.</p>
+    
+    <p>Thank you for choosing our platform for your healthcare needs.</p>
+    
+    <p>Best regards,<br>
+        <b>DavidStone Healthcare Team</b>
+    </p>
+</body>
+
+</html>

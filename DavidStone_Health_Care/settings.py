@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     'service',
     'contact_us',
     'rest_framework.authtoken',
-
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -94,6 +94,29 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
+    # jodi global authenticate korte chai tobe eta add korte hobe r na korle views.py te sob gulo dhore dhore authenticated korte hobe
+    # 'DEFAULT_PERMISSION_CLASSES': [
+    #     'rest_framework.permissions.IsAuthenticated',
+    # ]
+    
+    # globally readonly permissions dite eta korte hobe
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticatedOrReadOnly',
+    ],
+    
+    # jodi API k json a convert kore di tobe nicher class ta korte hbe, link a click korlei jason a data dekhabe API er page asbe na
+    
+    # 'DEFAULT_RENDERER_CLASSES': [
+    #     'rest_framework.renderers.JSONRenderer',
+    # ],
+}
+
 
 
 # Password validation
