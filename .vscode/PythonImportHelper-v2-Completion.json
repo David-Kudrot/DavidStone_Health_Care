@@ -393,6 +393,14 @@
         "documentation": {}
     },
     {
+        "label": "filters",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "serializers",
         "importPath": "rest_framework",
         "description": "rest_framework",
@@ -1449,7 +1457,7 @@
         "kind": 6,
         "importPath": "doctor.views",
         "description": "doctor.views",
-        "peekOfCode": "class SpecializationViewset(viewsets.ModelViewSet):\n    queryset = models.Specialization.objects.all()\n    serializer_class = serializers.SpecializationSerializer\nclass DesignationViewset(viewsets.ModelViewSet):\n    queryset = models.Designation.objects.all()\n    serializer_class = serializers.DesignationSerializer\nclass AvailableTimeViewset(viewsets.ModelViewSet):\n    queryset = models.AvailableTime.objects.all()\n    serializer_class = serializers.AvailableTimeSerializer\nclass ReviewViewset(viewsets.ModelViewSet):",
+        "peekOfCode": "class SpecializationViewset(viewsets.ModelViewSet):\n    queryset = models.Specialization.objects.all()\n    serializer_class = serializers.SpecializationSerializer\nclass DesignationViewset(viewsets.ModelViewSet):\n    queryset = models.Designation.objects.all()\n    serializer_class = serializers.DesignationSerializer\n# particular doctor id er jonno Available Time filter korbo, tai django filter use kortesi, installed app a add kora lagbe\nclass AvailableTimeForSpecificDoctor(filters.BaseFilterBackend):\n    def filter_queryset(self, request, query_set, view):\n        doctor_id = request.query_params.get(\"doctor_id\") # patient er jonno jemon kora hoise same ekahne ",
         "detail": "doctor.views",
         "documentation": {}
     },
@@ -1458,7 +1466,16 @@
         "kind": 6,
         "importPath": "doctor.views",
         "description": "doctor.views",
-        "peekOfCode": "class DesignationViewset(viewsets.ModelViewSet):\n    queryset = models.Designation.objects.all()\n    serializer_class = serializers.DesignationSerializer\nclass AvailableTimeViewset(viewsets.ModelViewSet):\n    queryset = models.AvailableTime.objects.all()\n    serializer_class = serializers.AvailableTimeSerializer\nclass ReviewViewset(viewsets.ModelViewSet):\n    queryset = models.Review.objects.all()\n    serializer_class = serializers.ReviewSerializer",
+        "peekOfCode": "class DesignationViewset(viewsets.ModelViewSet):\n    queryset = models.Designation.objects.all()\n    serializer_class = serializers.DesignationSerializer\n# particular doctor id er jonno Available Time filter korbo, tai django filter use kortesi, installed app a add kora lagbe\nclass AvailableTimeForSpecificDoctor(filters.BaseFilterBackend):\n    def filter_queryset(self, request, query_set, view):\n        doctor_id = request.query_params.get(\"doctor_id\") # patient er jonno jemon kora hoise same ekahne \n        if doctor_id:\n            return query_set.filter(doctor = doctor_id) # Doctor model ache tai eta automatic small doctor likha jabe, jehetu related_name use korinai \n        return query_set",
+        "detail": "doctor.views",
+        "documentation": {}
+    },
+    {
+        "label": "AvailableTimeForSpecificDoctor",
+        "kind": 6,
+        "importPath": "doctor.views",
+        "description": "doctor.views",
+        "peekOfCode": "class AvailableTimeForSpecificDoctor(filters.BaseFilterBackend):\n    def filter_queryset(self, request, query_set, view):\n        doctor_id = request.query_params.get(\"doctor_id\") # patient er jonno jemon kora hoise same ekahne \n        if doctor_id:\n            return query_set.filter(doctor = doctor_id) # Doctor model ache tai eta automatic small doctor likha jabe, jehetu related_name use korinai \n        return query_set\nclass AvailableTimeViewset(viewsets.ModelViewSet):\n    queryset = models.AvailableTime.objects.all()\n    serializer_class = serializers.AvailableTimeSerializer\n    # filter korar jonno filter_backends built-in variable use kora holo",
         "detail": "doctor.views",
         "documentation": {}
     },
@@ -1467,7 +1484,7 @@
         "kind": 6,
         "importPath": "doctor.views",
         "description": "doctor.views",
-        "peekOfCode": "class AvailableTimeViewset(viewsets.ModelViewSet):\n    queryset = models.AvailableTime.objects.all()\n    serializer_class = serializers.AvailableTimeSerializer\nclass ReviewViewset(viewsets.ModelViewSet):\n    queryset = models.Review.objects.all()\n    serializer_class = serializers.ReviewSerializer",
+        "peekOfCode": "class AvailableTimeViewset(viewsets.ModelViewSet):\n    queryset = models.AvailableTime.objects.all()\n    serializer_class = serializers.AvailableTimeSerializer\n    # filter korar jonno filter_backends built-in variable use kora holo\n    filter_backends = [AvailableTimeForSpecificDoctor]\nclass ReviewViewset(viewsets.ModelViewSet):\n    queryset = models.Review.objects.all()\n    serializer_class = serializers.ReviewSerializer",
         "detail": "doctor.views",
         "documentation": {}
     },
