@@ -112,9 +112,9 @@ REST_FRAMEWORK = {
     
     # jodi API k json a convert kore di tobe nicher class ta korte hbe, link a click korlei jason a data dekhabe API er page asbe na
     
-    # 'DEFAULT_RENDERER_CLASSES': [
-    #     'rest_framework.renderers.JSONRenderer',
-    # ],
+    'DEFAULT_RENDERER_CLASSES': [
+        'rest_framework.renderers.JSONRenderer',
+    ],
 }
 
 
