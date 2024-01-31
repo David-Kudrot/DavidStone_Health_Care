@@ -8,3 +8,8 @@ from . import serializers
 class ServiceViewsets(viewsets.ModelViewSet):
     queryset = models.ServiceModel.objects.all()
     serializer_class = serializers.ServiceSerializer
+    
+    
+class ExtraServiceViewsets(viewsets.ModelViewSet):
+    queryset = models.ExtraService.objects.all()
+    serializer_class = serializers.ExtraServiceSerializer

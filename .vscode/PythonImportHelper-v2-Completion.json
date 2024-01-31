@@ -16,6 +16,54 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -96,6 +144,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -129,6 +193,22 @@
     },
     {
         "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -886,11 +966,20 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "appointment.migrations.0002_remove_appointment_symptom_appointment_description",
+        "description": "appointment.migrations.0002_remove_appointment_symptom_appointment_description",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('appointment', '0001_initial'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='appointment',\n            name='symptom',\n        ),\n        migrations.AddField(",
+        "detail": "appointment.migrations.0002_remove_appointment_symptom_appointment_description",
+        "documentation": {}
+    },
+    {
         "label": "AppointmentAdmin",
         "kind": 6,
         "importPath": "appointment.admin",
         "description": "appointment.admin",
-        "peekOfCode": "class AppointmentAdmin(admin.ModelAdmin):\n    list_display = ['doctor_name', 'patient_name', 'appointment_types', 'appointment_status', 'symptom', 'time', 'cancel']\n    def patient_name(self,obj):\n        return obj.patient.user.first_name\n    def doctor_name(self,obj):\n        return obj.doctor.user.first_name\n    # save_model() method die admin, running kore dilei user email pabe\n    def save_model(self, request, obj, form, change):\n        obj.save()\n        if obj.appointment_status == \"Running\" and obj.appointment_types == \"Online\":",
+        "peekOfCode": "class AppointmentAdmin(admin.ModelAdmin):\n    list_display = ['doctor_name', 'patient_name', 'appointment_types', 'appointment_status', 'description', 'time', 'cancel']\n    def patient_name(self,obj):\n        return obj.patient.user.first_name\n    def doctor_name(self,obj):\n        return obj.doctor.user.first_name\n    # save_model() method die admin, running kore dilei user email pabe\n    def save_model(self, request, obj, form, change):\n        obj.save()\n        if obj.appointment_status == \"Running\" and obj.appointment_types == \"Online\":",
         "detail": "appointment.admin",
         "documentation": {}
     },
@@ -908,7 +997,7 @@
         "kind": 6,
         "importPath": "appointment.models",
         "description": "appointment.models",
-        "peekOfCode": "class Appointment(models.Model):\n    patient = models.ForeignKey(Patient, on_delete = models.CASCADE)\n    doctor = models.ForeignKey(Doctor, on_delete = models.CASCADE)\n    appointment_types = models.CharField(choices = APPOINTMENT_TYPES, max_length = 10)\n    appointment_status = models.CharField(choices = APPOINTMENT_STATUS, max_length = 10, default = \"Pending\")\n    symptom = models.TextField()\n    time = models.ForeignKey(AvailableTime, on_delete = models.CASCADE)\n    cancel = models.BooleanField(default = False)\n    def __str__(self):\n        return f\"Doctor : {self.doctor.user.first_name} , Patient : {self.patient.user.first_name}\"",
+        "peekOfCode": "class Appointment(models.Model):\n    patient = models.ForeignKey(Patient, on_delete = models.CASCADE)\n    doctor = models.ForeignKey(Doctor, on_delete = models.CASCADE)\n    appointment_types = models.CharField(choices = APPOINTMENT_TYPES, max_length = 10)\n    appointment_status = models.CharField(choices = APPOINTMENT_STATUS, max_length = 10, default = \"Pending\")\n    description = models.TextField(null=True, blank=True)\n    time = models.ForeignKey(AvailableTime, on_delete = models.CASCADE)\n    cancel = models.BooleanField(default = False)\n    def __str__(self):\n        return f\"Doctor : {self.doctor.user.first_name} , Patient : {self.patient.user.first_name}\"",
         "detail": "appointment.models",
         "documentation": {}
     },
@@ -926,7 +1015,7 @@
         "kind": 5,
         "importPath": "appointment.models",
         "description": "appointment.models",
-        "peekOfCode": "APPOINTMENT_TYPES = [\n    ('Offline', 'Offline'),\n    ('Online', 'Online'),\n]\nclass Appointment(models.Model):\n    patient = models.ForeignKey(Patient, on_delete = models.CASCADE)\n    doctor = models.ForeignKey(Doctor, on_delete = models.CASCADE)\n    appointment_types = models.CharField(choices = APPOINTMENT_TYPES, max_length = 10)\n    appointment_status = models.CharField(choices = APPOINTMENT_STATUS, max_length = 10, default = \"Pending\")\n    symptom = models.TextField()",
+        "peekOfCode": "APPOINTMENT_TYPES = [\n    ('Offline', 'Offline'),\n    ('Online', 'Online'),\n]\nclass Appointment(models.Model):\n    patient = models.ForeignKey(Patient, on_delete = models.CASCADE)\n    doctor = models.ForeignKey(Doctor, on_delete = models.CASCADE)\n    appointment_types = models.CharField(choices = APPOINTMENT_TYPES, max_length = 10)\n    appointment_status = models.CharField(choices = APPOINTMENT_STATUS, max_length = 10, default = \"Pending\")\n    description = models.TextField(null=True, blank=True)",
         "detail": "appointment.models",
         "documentation": {}
     },
@@ -976,11 +1065,29 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "contact_us.migrations.0002_contactus_email",
+        "description": "contact_us.migrations.0002_contactus_email",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('contact_us', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='contactus',\n            name='email',\n            field=models.CharField(blank=True, max_length=50, null=True),\n        ),",
+        "detail": "contact_us.migrations.0002_contactus_email",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "contact_us.migrations.0003_subscribe",
+        "description": "contact_us.migrations.0003_subscribe",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('contact_us', '0002_contactus_email'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Subscribe',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('email', models.CharField(max_length=40)),",
+        "detail": "contact_us.migrations.0003_subscribe",
+        "documentation": {}
+    },
+    {
         "label": "ContactModelAdmin",
         "kind": 6,
         "importPath": "contact_us.admin",
         "description": "contact_us.admin",
-        "peekOfCode": "class ContactModelAdmin(admin.ModelAdmin):\n    list_display = ['name', 'phone_no', 'problem'] # admin a ei list a dekhabe\nadmin.site.register(ContactUs, ContactModelAdmin)",
+        "peekOfCode": "class ContactModelAdmin(admin.ModelAdmin):\n    list_display = ['name', 'phone_no', 'problem'] # admin a ei list a dekhabe\nadmin.site.register(ContactUs, ContactModelAdmin)\nadmin.site.register(Subscribe)",
         "detail": "contact_us.admin",
         "documentation": {}
     },
@@ -998,7 +1105,16 @@
         "kind": 6,
         "importPath": "contact_us.models",
         "description": "contact_us.models",
-        "peekOfCode": "class ContactUs(models.Model):\n    name = models.CharField(max_length=50)\n    phone_no = models.CharField(max_length=15)\n    problem = models.TextField()\n    def __str__(self):\n        return self.name\n    class Meta:\n        verbose_name_plural = \"Contact Us\" # admin panel a Contact Uss hoye jawar jonno verbose name plural use kora holo, jate Contact Us hoy",
+        "peekOfCode": "class ContactUs(models.Model):\n    name = models.CharField(max_length=50)\n    phone_no = models.CharField(max_length=15)\n    email = models.CharField(max_length=50, null=True, blank=True)\n    problem = models.TextField()\n    def __str__(self):\n        return self.name\n    class Meta:\n        verbose_name_plural = \"Contact Us\" # admin panel a Contact Uss hoye jawar jonno verbose name plural use kora holo, jate Contact Us hoy\nclass Subscribe(models.Model):",
+        "detail": "contact_us.models",
+        "documentation": {}
+    },
+    {
+        "label": "Subscribe",
+        "kind": 6,
+        "importPath": "contact_us.models",
+        "description": "contact_us.models",
+        "peekOfCode": "class Subscribe(models.Model):\n    email = models.CharField(max_length=40)\n    def __str__(self):\n        return f\"Subscriber Mail : {self.email}\"",
         "detail": "contact_us.models",
         "documentation": {}
     },
@@ -1007,7 +1123,16 @@
         "kind": 6,
         "importPath": "contact_us.serializers",
         "description": "contact_us.serializers",
-        "peekOfCode": "class ContactUsSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ContactUs\n        fields = '__all__'",
+        "peekOfCode": "class ContactUsSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ContactUs\n        fields = '__all__'\nclass SubscribeSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Subscribe\n        fields = '__all__'",
+        "detail": "contact_us.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "SubscribeSerializer",
+        "kind": 6,
+        "importPath": "contact_us.serializers",
+        "description": "contact_us.serializers",
+        "peekOfCode": "class SubscribeSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Subscribe\n        fields = '__all__'",
         "detail": "contact_us.serializers",
         "documentation": {}
     },
@@ -1016,7 +1141,7 @@
         "kind": 5,
         "importPath": "contact_us.urls",
         "description": "contact_us.urls",
-        "peekOfCode": "router = DefaultRouter() # making a router, router toiri korlaam\nrouter.register('', views.ContactUsViewsets) # router er antena toiri korlam \nurlpatterns = [\n    path('', include(router.urls)),\n]",
+        "peekOfCode": "router = DefaultRouter() # making a router, router toiri korlaam\nrouter.register('', views.ContactUsViewsets) # router er antena toiri korlam \nrouter.register('subscriber', views.SubscribeViewsets)\nurlpatterns = [\n    path('', include(router.urls)),\n]",
         "detail": "contact_us.urls",
         "documentation": {}
     },
@@ -1034,7 +1159,16 @@
         "kind": 6,
         "importPath": "contact_us.views",
         "description": "contact_us.views",
-        "peekOfCode": "class ContactUsViewsets(viewsets.ModelViewSet):\n    queryset = models.ContactUs.objects.all()\n    serializer_class = serializers.ContactUsSerializer",
+        "peekOfCode": "class ContactUsViewsets(viewsets.ModelViewSet):\n    queryset = models.ContactUs.objects.all()\n    serializer_class = serializers.ContactUsSerializer\nclass SubscribeViewsets(viewsets.ModelViewSet):\n    queryset = models.Subscribe.objects.all()\n    serializer_class = serializers.SubscribeSerializer",
+        "detail": "contact_us.views",
+        "documentation": {}
+    },
+    {
+        "label": "SubscribeViewsets",
+        "kind": 6,
+        "importPath": "contact_us.views",
+        "description": "contact_us.views",
+        "peekOfCode": "class SubscribeViewsets(viewsets.ModelViewSet):\n    queryset = models.Subscribe.objects.all()\n    serializer_class = serializers.SubscribeSerializer",
         "detail": "contact_us.views",
         "documentation": {}
     },
@@ -1309,6 +1443,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "doctor.migrations.0005_doctor_description",
+        "description": "doctor.migrations.0005_doctor_description",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('doctor', '0004_alter_doctor_image'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='doctor',\n            name='description',\n            field=models.TextField(blank=True, null=True),\n        ),",
+        "detail": "doctor.migrations.0005_doctor_description",
+        "documentation": {}
+    },
+    {
         "label": "SpecializationAdmin",
         "kind": 6,
         "importPath": "doctor.admin",
@@ -1376,7 +1519,7 @@
         "kind": 6,
         "importPath": "doctor.models",
         "description": "doctor.models",
-        "peekOfCode": "class Doctor(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    image = models.ImageField(upload_to='doctor/images/')\n    designation = models.ManyToManyField(Designation)\n    specialization = models.ManyToManyField(Specialization)\n    available_time = models.ManyToManyField(AvailableTime)\n    fee = models.IntegerField()\n    meeting_link = models.CharField(max_length=150)\n    def __str__(self):\n        return f\"{self.user.first_name} {self.user.last_name}\"",
+        "peekOfCode": "class Doctor(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    image = models.ImageField(upload_to='doctor/images/')\n    designation = models.ManyToManyField(Designation)\n    specialization = models.ManyToManyField(Specialization)\n    available_time = models.ManyToManyField(AvailableTime)\n    description = models.TextField(null=True, blank=True)\n    fee = models.IntegerField()\n    meeting_link = models.CharField(max_length=150)\n    def __str__(self):",
         "detail": "doctor.models",
         "documentation": {}
     },
@@ -1669,6 +1812,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "service.migrations.0002_extraservice",
+        "description": "service.migrations.0002_extraservice",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('service', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ExtraService',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=100)),",
+        "detail": "service.migrations.0002_extraservice",
+        "documentation": {}
+    },
+    {
         "label": "ServiceConfig",
         "kind": 6,
         "importPath": "service.apps",
@@ -1682,7 +1834,16 @@
         "kind": 6,
         "importPath": "service.models",
         "description": "service.models",
-        "peekOfCode": "class ServiceModel(models.Model):\n    name = models.CharField(max_length=100)\n    description = models.TextField()\n    image = models.ImageField(upload_to=\"service/images\")\n    def __str__(self):\n        return self.name",
+        "peekOfCode": "class ServiceModel(models.Model):\n    name = models.CharField(max_length=100)\n    description = models.TextField()\n    image = models.ImageField(upload_to=\"service/images\")\n    def __str__(self):\n        return self.name\nclass ExtraService(models.Model):\n    name = models.CharField(max_length=100)\n    description = models.TextField()\n    def __str__(self):",
+        "detail": "service.models",
+        "documentation": {}
+    },
+    {
+        "label": "ExtraService",
+        "kind": 6,
+        "importPath": "service.models",
+        "description": "service.models",
+        "peekOfCode": "class ExtraService(models.Model):\n    name = models.CharField(max_length=100)\n    description = models.TextField()\n    def __str__(self):\n        return f\"ExtraService : {self.name}\"",
         "detail": "service.models",
         "documentation": {}
     },
@@ -1691,7 +1852,16 @@
         "kind": 6,
         "importPath": "service.serializers",
         "description": "service.serializers",
-        "peekOfCode": "class ServiceSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = models.ServiceModel\n        fields = '__all__'",
+        "peekOfCode": "class ServiceSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = models.ServiceModel\n        fields = '__all__'\nclass ExtraServiceSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = models.ExtraService\n        fields = '__all__'",
+        "detail": "service.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ExtraServiceSerializer",
+        "kind": 6,
+        "importPath": "service.serializers",
+        "description": "service.serializers",
+        "peekOfCode": "class ExtraServiceSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = models.ExtraService\n        fields = '__all__'",
         "detail": "service.serializers",
         "documentation": {}
     },
@@ -1700,7 +1870,7 @@
         "kind": 5,
         "importPath": "service.urls",
         "description": "service.urls",
-        "peekOfCode": "router = DefaultRouter()\nrouter.register('', views.ServiceViewsets)\nurlpatterns = [\n    path('', include(router.urls)),\n]",
+        "peekOfCode": "router = DefaultRouter()\nrouter.register('', views.ServiceViewsets)\nrouter.register('more', views.ExtraServiceViewsets)\nurlpatterns = [\n    path('', include(router.urls)),\n]",
         "detail": "service.urls",
         "documentation": {}
     },
@@ -1718,7 +1888,16 @@
         "kind": 6,
         "importPath": "service.views",
         "description": "service.views",
-        "peekOfCode": "class ServiceViewsets(viewsets.ModelViewSet):\n    queryset = models.ServiceModel.objects.all()\n    serializer_class = serializers.ServiceSerializer",
+        "peekOfCode": "class ServiceViewsets(viewsets.ModelViewSet):\n    queryset = models.ServiceModel.objects.all()\n    serializer_class = serializers.ServiceSerializer\nclass ExtraServiceViewsets(viewsets.ModelViewSet):\n    queryset = models.ExtraService.objects.all()\n    serializer_class = serializers.ExtraServiceSerializer",
+        "detail": "service.views",
+        "documentation": {}
+    },
+    {
+        "label": "ExtraServiceViewsets",
+        "kind": 6,
+        "importPath": "service.views",
+        "description": "service.views",
+        "peekOfCode": "class ExtraServiceViewsets(viewsets.ModelViewSet):\n    queryset = models.ExtraService.objects.all()\n    serializer_class = serializers.ExtraServiceSerializer",
         "detail": "service.views",
         "documentation": {}
     },

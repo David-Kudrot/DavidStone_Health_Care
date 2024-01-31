@@ -31,6 +31,7 @@ class Doctor(models.Model):
     designation = models.ManyToManyField(Designation)
     specialization = models.ManyToManyField(Specialization)
     available_time = models.ManyToManyField(AvailableTime)
+    description = models.TextField(null=True, blank=True)
     fee = models.IntegerField()
     meeting_link = models.CharField(max_length=150)
     

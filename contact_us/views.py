@@ -7,3 +7,7 @@ from . import serializers
 class ContactUsViewsets(viewsets.ModelViewSet):
     queryset = models.ContactUs.objects.all()
     serializer_class = serializers.ContactUsSerializer
+    
+class SubscribeViewsets(viewsets.ModelViewSet):
+    queryset = models.Subscribe.objects.all()
+    serializer_class = serializers.SubscribeSerializer
